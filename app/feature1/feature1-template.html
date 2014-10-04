@@ -3,4 +3,21 @@
 		<input type="text" name="searchInput" ng-model="searchQuery" required></input>
 		<input type="submit" value="Search YouTube">
 	</form>
+	<div class="results">
+		<div class="item" ng-repeat="item in items" index="{{$index}}">
+				<div class="thumb">
+					<img src="{{item.snippet.thumbnails.medium.url}}">
+				</div>
+				<div class="info">
+					<h3 class="title">{{item.snippet.title}}</h3>
+					<span class="description">{{item.snippet.description}}</span>
+				</div>
+		</div>
+	</div>
+	<div class="recent">
+		<h4>Most Recent Searches</h4>
+	</div>
+	<div class="recent">
+		<h4>Stuff You May Like</h4>
+	</div>
 </div>

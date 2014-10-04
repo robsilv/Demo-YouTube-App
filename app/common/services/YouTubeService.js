@@ -14,7 +14,7 @@ angular.module('app.common')
 
 		$log.log('YouTubeService - search...');
 		var url = urlBase + config.api.search;
-		url += '?part=snippet&q=' + query + 'key=' + config.api.key;
+		url += '?part=snippet&q=' + query + '&key=' + config.api.key;
 		var promise = $http.get(url, apiConfig).then( function onSuccess(result) {
 			$log.log(' YouTubeService - Search results:', result);
 			return result.data;	

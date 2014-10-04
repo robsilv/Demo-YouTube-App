@@ -15,7 +15,7 @@ angular.module( 'app', [
 	api: {
 		root: 'https://www.googleapis.com/youtube/v3',
 		search: '/search',
-		key: '{API_KEY}',
+		key: 'API_KEY',
 		config: {}
 	}
 })

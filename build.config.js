@@ -14,7 +14,7 @@ module.exports = {
         'vendor/angular-mocks/angular-mocks.js',
         'vendor/angular-ui-router/release/angular-ui-router.js',
         'vendor/jquery/dist/jquery.js',
-        'vendor/bootstrap/dist/js/bootstrap.js',
+        //'vendor/bootstrap/dist/js/bootstrap.js',
         'vendor/lodash/dist/lodash.js'
       ],
 
@@ -36,8 +36,8 @@ module.exports = {
         'app/common/**/*.css',
         'app/components/**/*.css',
         'vendor/angular-loading-bar/src/loading-bar.css',
-        'vendor/bootstrap/dist/css/bootstrap.css',
-        'vendor/bootstrap/dist/css/bootstrap-theme.css'
+        //'vendor/bootstrap/dist/css/bootstrap.css',
+        //'vendor/bootstrap/dist/css/bootstrap-theme.css'
       ],
 
       buildDest: 'build/css'

@@ -1,0 +1,57 @@
+.thumb {
+	display: inline-block;
+	padding-right: 10px
+}
+.info {
+	display: inline-block;
+	vertical-align: top;
+	width: 320px;
+}
+.item {
+	white-space: nowrap;
+	margin-top: 20px;
+}
+.title {
+	white-space: normal;
+}
+.description {
+	white-space: normal;
+	overflow: hidden;
+}
+
+.results {
+	float: left;
+}
+
+.recent {
+	width:180px;
+	height:200px;
+	border: 1px;
+	margin-bottom: 20px;
+	border-color: #000000;
+	border-style: solid;
+	float: right;
+	clear: right;
+}
+
+h3 {
+	margin-top: 0px;
+}
+
+@media only screen and (max-width: 880px) {
+	 .thumb {
+		display: block;
+	}
+	.info {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	.recent {
+		float: left;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
+}
