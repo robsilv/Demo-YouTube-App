@@ -1,7 +1,6 @@
 angular.module( 'app', [
 	'templates',
-	'app.feature1',
-	'app.feature2',
+	'app.search',
 	'app.common',
 	'app.components',
 	'ui.router',
@@ -25,24 +24,16 @@ angular.module( 'app', [
 	cfpLoadingBarProvider.includeSpinner = false;
 
 	$stateProvider
-		.state('feature1', {
-			url: '/feature1',
-			controller: 'Feature1Controller',
-			templateUrl: 'feature1/feature1-template.html',
+		.state('search', {
+			url: '/search/{apiKey}',
+			controller: 'SearchController',
+			templateUrl: 'search/search-template.html',
 			data: {
-				pageTitle: 'feature 1'
+				pageTitle: 'Search'
 			}
 		})
-		.state('feature2', {
-			url: '/feature2',
-			controller: 'Feature2Controller',
-			templateUrl: 'feature2/feature2-template.html',
-			data: {
-				pageTitle: 'feature 2'
-			}
-		});
 
-	$urlRouterProvider.otherwise('/feature1');
+	$urlRouterProvider.otherwise('/search');
 
 
 	$locationProvider.hashPrefix('!');
@@ -52,7 +43,6 @@ angular.module( 'app', [
 
 });
 
-angular.module('app.feature1', []);
-angular.module('app.feature2', []);
+angular.module('app.search', []);
 angular.module('app.common', []);
 angular.module('app.components', []);
