@@ -25,15 +25,15 @@ angular.module( 'app', [
 
 	$stateProvider
 		.state('search', {
-			url: '/search/{apiKey}',
+			url: '/search/{apiKey}/{query}',
 			controller: 'SearchController',
 			templateUrl: 'search/search-template.html',
 			data: {
-				pageTitle: 'Search'
+				pageTitle: 'YouTube Search'
 			}
-		})
+		});
 
-	$urlRouterProvider.otherwise('/search');
+	$urlRouterProvider.otherwise('/search/put_api_key_here/hello');
 
 
 	$locationProvider.hashPrefix('!');

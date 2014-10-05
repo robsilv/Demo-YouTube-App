@@ -1,23 +1,28 @@
 <div>
-	<form ng-submit="search(searchQuery)">
-		<input type="text" name="searchInput" ng-model="searchQuery" required></input>
-		<input type="submit" value="Search YouTube">
-	</form>
+    <div id="searchbar">
+        <form class="form-wrapper" ng-submit="setState()">
+            <div class="input-wrapper">
+                <input type="text" placeholder="Input text here" name="searchInput" ng-model="searchQuery" />
+            </div>
+            <button type="submit">Search YouTube</button>
+        </form>
+    </div>	
+
 	<div class="results">
 		<div class="item" ng-repeat="item in items" index="{{$index}}">
-				<div class="thumb">
-					<img src="{{item.snippet.thumbnails.medium.url}}">
-				</div>
-				<div class="info">
-					<h3 class="title">{{item.snippet.title}}</h3>
-					<span class="description">{{item.snippet.description}}</span>
-				</div>
+			<div class="thumb">
+				<img src="{{item.snippet.thumbnails.medium.url}}">
+			</div>
+			<div class="info">
+				<h3 class="title">{{item.snippet.title}}</h3>
+				<span class="description">{{item.snippet.description}}</span>
+			</div>
 		</div>
 	</div>
-	<div class="recent">
+	<div class="optionsBox">
 		<h4>Most Recent Searches</h4>
 	</div>
-	<div class="recent">
+	<div class="optionsBox">
 		<h4>Stuff You May Like</h4>
 	</div>
 </div>

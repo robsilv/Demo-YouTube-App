@@ -7,10 +7,13 @@
 	vertical-align: top;
 	width: 320px;
 }
+
 .item {
+	width: 320px;
 	white-space: nowrap;
 	margin-top: 20px;
 }
+
 .title {
 	white-space: normal;
 }
@@ -23,11 +26,11 @@
 	float: left;
 }
 
-.recent {
+.optionsBox {
 	width:180px;
 	height:200px;
 	border: 1px;
-	margin-bottom: 20px;
+	margin-top: 20px;
 	border-color: #000000;
 	border-style: solid;
 	float: right;
@@ -54,4 +57,82 @@ h3 {
 		margin-top: 20px;
 		margin-bottom: 0px;
 	}
+
+	.item {
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	.results {
+		width: 100%;
+	}
+
+	.optionsBox {
+		width: 100%;
+	}	
 }
+
+/* Search Bar */
+
+#searchbar {
+    top: 20px;
+    left: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.input-wrapper {
+    position: absolute;
+    right: 110px;
+    left: 0px;
+    top : 0px;
+    bottom: 0px;
+}
+
+/* Form wrapper styling */
+.form-wrapper {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 37px;
+    display: inline-block;
+}
+ 
+.form-wrapper input {
+    height: 100%;
+    width: 100%;
+    padding: 8px 10px;
+    float: left;   
+    color: #1f1f9d;
+    border: 0;
+    background: #e6e6e6;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+ 
+/* Form submit button */
+.form-wrapper button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    overflow: visible;
+
+    
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 37px;
+    width: 104px;
+    color: #ffffff;
+    background: red;
+}  
+   
+ 
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}    
